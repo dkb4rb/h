@@ -1,13 +1,10 @@
 #!/usr/bin/python3
-
-"""Print the last digits"""
-
 import random
-number = random.randit(-10, 10)
+number = random.randint(-10, 10)
 
 if number > 0:
-    print(number, "is positive")
+    print("{} is positive".format(number))
 elif number == 0:
-    print(number, "is zero")
+    print(number, "{} is zero".format(number))
 else:
-    print(number, "is negative")
+    print(number, "{} is negative".format(number))
