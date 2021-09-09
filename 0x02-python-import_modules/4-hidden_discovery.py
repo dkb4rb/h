@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-import marshal
+if __name__ == "__main__":
 
-s = open('hidden_4.pyc', 'rb')
-s.seek(8)
-code_obj = marshal.load(s)
+    import hidden_3
 
-print(code_obj)
+    for name in dir(hidden_4):
+        if name[:2] != "__":
+            print("{:s}".format(name))
