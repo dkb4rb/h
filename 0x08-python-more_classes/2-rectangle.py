@@ -1,7 +1,4 @@
 #!/usr/bin/python3
-# File: 1-rectangle.py
-# Juan Duque <3428@holbertonschool.com>
-
 
 class Rectangle:
 
