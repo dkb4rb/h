@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# 4-square.py
+# 5-square.py
 # Juan Duque <3428@holbertonschool.com>
 """Define a class Square."""
 
@@ -7,7 +7,7 @@
 class Square:
     """Represent a square."""
 
-    def __init__(self, size=0):
+    def __init__(self, size):
         """Initialize a new square.
 
         Args:
@@ -31,3 +31,11 @@ class Square:
     def area(self):
         """Return the current area of the square."""
         return (self.__size * self.__size)
+
+    def my_print(self):
+        """Print the square with the # character."""
+        for i in range(0, self.__size):
+            [print("#", end="") for j in range(self.__size)]
+            print("")
+        if self.__size == 0:
+            print("")

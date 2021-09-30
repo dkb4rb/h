@@ -1,9 +1,16 @@
 #!/usr/bin/python3
-
-# File: 0-square.py
-# Author: Juan Duque
+# 1-square.py
+# Juan Duque <3428@holbertonschool.com>
+"""Define a class Square."""
 
 
 class Square:
+    """Represent a square."""
+
     def __init__(self, size):
+        """Initialize a new Square.
+
+        Args:
+            size (int): The size of the new square.
+        """
         self.__size = size

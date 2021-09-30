@@ -1,11 +1,18 @@
 #!/usr/bin/python3
-
-# File: 0-square.py
-# Author: Juan Duque
+# 2-square.py
+# Juan Duque <3428@holbertonschool.com>
+"""Define a class Square."""
 
 
 class Square:
+    """Represent a square."""
+
     def __init__(self, size=0):
+        """Initialize a new Square.
+
+        Args:
+            size (int): The size of the new square.
+        """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         elif size < 0:
