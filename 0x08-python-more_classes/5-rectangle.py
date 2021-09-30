@@ -1,17 +1,20 @@
 #!/usr/bin/python3
 # 3-rectangle.py
 # Juan Duque <3428@holbertonschool.com>
+"""
+Defines a class Rectangle
+"""
 
 
 class Rectangle:
     """Representation of a rectangle"""
-
     def __init__(self, width=0, height=0):
         """Initializes the rectangle"""
         self.width = width
         self.height = height
 
     def __del__(self):
+        """prints a string when an instance has been deleted"""
         print("Bye rectangle...")
 
     @property
