@@ -2,11 +2,6 @@
 # 3-rectangle.py
 # Juan Duque <3428@holbertonschool.com>
 
-#!/usr/bin/python3
-"""
-Defines a class Rectangle
-"""
-
 
 class Rectangle:
     """Representation of a rectangle"""
