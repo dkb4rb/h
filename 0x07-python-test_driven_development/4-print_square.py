@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+# 4-print_square.py
+# Juan Duque <3428@holbertonschool.com>
 
 from typing import Type
 
@@ -11,7 +13,7 @@ def print_square(size):
         TypeError: If size is not an integer.
         ValueError: If size is < 0
     """
-    if type(size) is not int:
+    if not isinstance(size, int):
         raise TypeError("size must be an integer")
     if size < 0:
         raise TypeError("size must be >= 0")
