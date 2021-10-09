@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 # 0-add_integer.py
 # Juan Duque <3428@holbertonschool.com>
-
 """Defines matrix integer addition function."""
 
 
