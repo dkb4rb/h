@@ -19,3 +19,15 @@ Checking for newline at end:
 	 Hello, how are you?
 	 <BLANKLINE>
 	 <BLANKLINE>
+
+Checking for no args:
+	 >>> text_indentation()
+	 Traceback (most recent call last):
+	 ...
+	 TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+Checking for too many args:
+	 >>> text_indentation("Hello", "Hi")
+	 Traceback (most recent call last):
+	 ...
+	 TypeError: text_indentation() takes 1 positional argument but 2 were given
