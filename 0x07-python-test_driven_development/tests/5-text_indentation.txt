@@ -9,12 +9,13 @@ This module prints a text with 2 lines after each of these characters
 Usage
 =====
 
-Text is printed with two new lines after each of the characters ``.``, ``?``,
-and ``:``.
+Importing the function from the module:
+	>>> text_indentation = __import__("5-text_indentation").text_indentation
 
 ::
 
-    >>> text_indentantion = __import__('5-text_indentantion').text_indentantion
-    >>> text_indentantion("ho")
-    ho
-
+Checking for newline at end:
+	 >>> text_indentation("Hello, how are you?\n")
+	 Hello, how are you?
+	 <BLANKLINE>
+	 <BLANKLINE>
