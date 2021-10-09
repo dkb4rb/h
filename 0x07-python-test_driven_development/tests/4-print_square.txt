@@ -21,12 +21,21 @@ represents the height and width of the square.
     #
 
 ::
-    >>> print_square(20)
-    ########
-    ########
+    >>> print_square(4)
+    ####
+    ####
+    ####
+    ####
 
 ::
-    >>> print_square("Hola")
-    Traceback (most recent call last):
-         ...
-         TypeError: size must be an integer
+    >>> print_square(10)
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
