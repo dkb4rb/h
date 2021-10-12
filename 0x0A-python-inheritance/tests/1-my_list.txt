@@ -140,7 +140,27 @@ will be raised.
     >>> print(my_list)
     ['Juan', 'Had3z', 'Holberton', 'School']
 
-    ::
+::
 
-        >>> my_list.print_sorted()
-        ['Had3z', 'Holberton', 'Juan', 'School']
+    >>> my_list.print_sorted()
+    ['Had3z', 'Holberton', 'Juan', 'School']
+
+::
+    >>> my_list = MyList()
+    >>> my_list.append(1)
+    >>> my_list.append(6)
+    >>> my_list.append(1)
+    >>> my_list.append(1)
+    >>> print(my_list)
+    [1, 6, 1, 1]
+
+    >>> my_list.append("Hola")
+    >>> my_list.append("como vas")
+
+
+    >>> my_list.print_sorted()
+    Traceback (most recent call last):
+        File "<stdin>", line 1, in <module>
+        File "<stdin>", line 3, in print_sorted
+    TypeError: '<' not supported between instances of 'str' and 'int'
+    
