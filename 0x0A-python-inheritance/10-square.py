@@ -5,7 +5,7 @@
 Import the modul what contain the new rectangle
 """
 Rectangle = __import__('9-rectangle').Rectangle
-""" Define the new class Square"""
+"""Defines a Rectangle subclass Square."""
 
 
 class Square(Rectangle):
