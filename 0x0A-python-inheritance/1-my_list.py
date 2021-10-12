@@ -1,11 +1,9 @@
 #!/usr/bin/python3
 # 1-my_list.py
 # Juan Duque <3428@holbertonschool.com>
-"""Define new Mylist"""
-
-
 class MyList(list):
-    """printing new sorte values"""
+    """Implements sorted printing for the built-in list class."""
 
     def print_sorted(self):
+        """Print a list in sorted ascending order."""
         print(sorted(self))
