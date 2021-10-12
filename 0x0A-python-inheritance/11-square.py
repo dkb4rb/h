@@ -6,13 +6,15 @@ Import module what contain new Rectangle
 """
 Rectangle = __import__('9-rectangle').Rectangle
 
-"""Define the new class"""
-
 
 class Square(Rectangle):
-    """ Reference to Square class inheritance"""
+    """Represent a square."""
 
     def __init__(self, size):
+        """Initialize a new square.
+        Args:
+            size (int): The size of the new square.
+        """
         self.integer_validator("size", size)
         super().__init__(size, size)
         self.__size = size
