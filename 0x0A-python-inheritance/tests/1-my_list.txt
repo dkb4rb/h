@@ -24,11 +24,41 @@ an empty list:
     []
 
 
+New List
+=========
+::
+
+    >>> family = MyList()
+    >>> family.append("Juan")
+    >>> print(family)
+    ['Juan']
+
+
+::
+
+    >>> my_list = MyList([10,50,5.0])
+    >>> print(my_list)
+    [10, 50, 5.0]
+
+
 ::
 
     >>> my_list = MyList()
     >>> my_list.print_sorted()
     []
+
+::
+
+    >>> print(my_list)
+
+
+::
+
+
+    >>> my_list = MyList(None)
+    Traceback (most recent call last):
+    TypeError: 'NoneType' object is not iterable
+
 
 If ``print_sorted(...)`` is called on a list of different types, a TypeError
 will be raised.
@@ -38,9 +68,4 @@ will be raised.
     >>> my_list = MyList([1, "Betty", "Holberton", 5])
     >>> my_list.print_sorted()
     Traceback (most recent call last):
-        TypeError: unorderable types: str() < int()
-
-::
-    >>> my_list = MyList(None)
-    Traceback (most recent call last):
-    TypeError: 'NoneType' object is not iterable
+    TypeError: unorderable types: str() < int()
