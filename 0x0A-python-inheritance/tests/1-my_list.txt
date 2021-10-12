@@ -121,3 +121,15 @@ will be raised.
     >>> my_list.append(5)
     >>> print(my_list)
     [1, 4, 2, 3, 5]
+
+
+::
+
+    >>> my_list = MyList()
+    >>> my_list.append("Juan")
+    >>> my_list.append("Had3z")
+    >>> my_list.append("Holberton")
+    >>> my_list.append("Betty")
+    >>> my_list.append("School")
+    >>> print(my_list)
+    ['Juan', 'Had3z', 'Holberton', 'Betty', 'School']
