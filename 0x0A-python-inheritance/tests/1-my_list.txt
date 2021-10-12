@@ -20,12 +20,6 @@ an empty list:
     <class '1-my_list.MyList'>
 
 ::
-
-    >>> list = [1,2,4,5,7,8]
-    >>> my_list.append(list)
-    [1,2,4,5,7,8]
-
-:
     >>> print(my_list)
     []
 
@@ -45,4 +39,8 @@ will be raised.
     >>> my_list.print_sorted()
     Traceback (most recent call last):
     TypeError: unorderable types: str() < int()
-        
+
+::
+    >>> my_list = MyList(None)
+    Traceback (most recent call last):
+    TypeError: 'NoneType' object is not iterable
