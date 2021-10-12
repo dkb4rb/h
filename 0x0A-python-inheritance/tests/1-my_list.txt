@@ -48,13 +48,6 @@ New List
 ::
 
 
-    >>> print(my_list)
-    [10, 50, 5.0]
-
-
-::
-
-
     >>> my_list = MyList([1, 2], [3, 4])
     Traceback (most recent call last):
         File "<stdin>", line 1, in <module>
