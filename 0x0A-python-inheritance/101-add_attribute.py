@@ -5,7 +5,7 @@
 """ function that adds a new attribute to an object if it’s possible"""
 
 
-def add_attribute(objet, attribute, value):
-    if not hasattr(objet, "__dict__"):
+def add_attribute(obj, attribute, value):
+    if not hasattr(obj, "__dict__"):
         raise TypeError("can't add new attribute")
-    setattr(objet, attribute, value)
+    setattr(obj, attribute, value)
