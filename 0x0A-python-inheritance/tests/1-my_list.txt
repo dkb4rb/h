@@ -20,9 +20,15 @@ an empty list:
     <class '1-my_list.MyList'>
 
 ::
+
     >>> list = [1,2,4,5,7,8]
     >>> my_list.append(list)
     [1,2,4,5,7,8]
+
+:
+    >>> print(my_list)
+    []
+
 
 ::
 
