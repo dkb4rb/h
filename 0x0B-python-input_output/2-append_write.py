@@ -5,7 +5,7 @@
 
 
 def append_write(filename="", text=""):
-    """ Read file with function of the append new text 
+    """ Read file with function of the append new text
         Return - 29"""
     with open(filename, 'a') as file:
         file.write(text)
