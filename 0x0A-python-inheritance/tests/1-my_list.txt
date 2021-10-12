@@ -6,22 +6,18 @@
 How to use
 ==========
 
-This program writing one class, what that inherit a new ```my_list```
+Instantiation
+=============
 
-::    
-    
-    >>> Mylist = __import__('1-my_list').Mylist
-    >>> my_list = MyList()
+``MyList`` can be instantiated with no arguments, which will return
+an empty list:
 
 ::
 
-    >>> my_list.append(1)
-    >>> print(my_list)
-    [1]
-
-
-Append
-======
+    >>> MyList = __import__('1-my_list').MyList
+    >>> my_list = MyList()
+    >>> type(my_list)
+    <class '1-my_list.MyList'>
 
 ::
     >>> list = [1,2,4,5,7,8]
@@ -34,4 +30,13 @@ Append
     >>> my_list.print_sorted()
     []
 
+If ``print_sorted(...)`` is called on a list of different types, a TypeError
+will be raised.
+
+::
+
+    >>> my_list = MyList([1, "Betty", "Holberton", 5])
+    >>> my_list.print_sorted()
+    Traceback (most recent call last):
+    TypeError: unorderable types: str() < int()
         
