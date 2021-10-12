@@ -1,4 +1,4 @@
-#!/usr/bin7python3
+#!/usr/bin/python3
 # 2-is_same_class.py
 # Juan Duque <3428@holbertonschool.com>
 """ Define new function """
