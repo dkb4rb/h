@@ -133,3 +133,9 @@ will be raised.
     >>> my_list.append("School")
     >>> print(my_list)
     ['Juan', 'Had3z', 'Holberton', 'Betty', 'School']
+
+    ::
+
+    >>> my_list.remove("Betty")
+    >>> print(my_list)
+    ['Juan', 'Had3z', 'Holberton', 'School']
