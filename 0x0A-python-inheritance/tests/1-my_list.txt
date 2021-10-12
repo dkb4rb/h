@@ -146,6 +146,8 @@ will be raised.
     ['Had3z', 'Holberton', 'Juan', 'School']
 
 ::
+
+
     >>> my_list = MyList()
     >>> my_list.append(1)
     >>> my_list.append(6)
