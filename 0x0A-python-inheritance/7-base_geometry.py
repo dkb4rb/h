@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# 8-rectangle.py
+# 7-base_geometry.py
 # Juan Duque <3428@holbertonschool.com>
 """ Define the new Class"""
 
