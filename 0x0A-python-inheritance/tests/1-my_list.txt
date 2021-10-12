@@ -173,5 +173,6 @@ will be raised.
 
 ::
 
-    >>> my_list = MyList()
+    >>> issubclass(MyList, list)
+	True
     
