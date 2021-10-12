@@ -39,6 +39,12 @@ New List
     [10, 50, 5.0]
 
 
+::
+
+
+    >>> print(my_list)
+    [10, 50, 5.0]
+
 
 ::
 
@@ -131,7 +137,6 @@ will be raised.
 ::
 
     >>> my_list.print_sorted()
-    >>> print(my_list)
     ['Had3z', 'Holberton', 'Juan', 'School']
 
 ::
