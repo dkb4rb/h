@@ -10,6 +10,6 @@ def write_file(filename="", text=""):
         Return - 29
 
     """
-    with open(filename, 'w') as file:
-        file.write(text)
-    return(29)
+    with open(filename, mode='w', encoding="utf-8") as file:
+        value = file.write(text)
+    return(value)
