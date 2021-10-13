@@ -7,7 +7,6 @@
 def pascal_triangle(n):
     if n <= 0:
         return []
-
     limit = n - 1
     triangle = [[1]]
 
@@ -23,8 +22,6 @@ def pascal_triangle(n):
                 suma = triangle[i][j] + triangle[i][nxt]
                 row.append(suma)
                 nxt += 1
-
         row.append(1)
         triangle.append(row)
-
     return triangle
