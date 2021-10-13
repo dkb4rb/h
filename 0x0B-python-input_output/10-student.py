@@ -21,7 +21,6 @@ class Student:
 
     def to_json(self, attrs=None):
         """ Return obj in dict mode"""
-        if isinstance(attrs, list) and
-        all(type(index) == str for index in attrs):
+        if type(attrs) == list and all(type(index) == str for index in attrs):
             return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
         return self.__dict__
