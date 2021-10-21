@@ -101,12 +101,14 @@ will be raised.
 
 ::
 
+
     >>> my_list.print_sorted(1)
     Traceback (most recent call last):
     TypeError: print_sorted() takes 1 positional argument but 2 were given
 
 
 ::
+
 
     >>> my_list.append(1)
     >>> my_list.append(4)
@@ -119,6 +121,7 @@ will be raised.
 
 ::
 
+
     >>> my_list = MyList()
     >>> my_list.append("Juan")
     >>> my_list.append("Had3z")
@@ -128,11 +131,14 @@ will be raised.
     >>> print(my_list)
     ['Juan', 'Had3z', 'Holberton', 'Betty', 'School']
 
-    ::
+
+::
+
 
     >>> my_list.remove("Betty")
     >>> print(my_list)
     ['Juan', 'Had3z', 'Holberton', 'School']
+
 
 ::
 
@@ -173,6 +179,5 @@ will be raised.
 
 ::
 
-    >>> issubclass(MyList, list)
-	True
+    >>> my_list = MyList()
     
