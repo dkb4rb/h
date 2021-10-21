@@ -23,7 +23,12 @@ class Base:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
 
-    def __str__(self) -> str:
-        print("[Rectangle]({}) {}/{} - {}/{}").format(self.id,
-                                                      self.x, self.y,
-                                                      self.width, self.height)
+    @staticmethod
+    def to_json_string(list_dictionaries):
+        """Return the JSON serialization of a list of dicts.
+        Args:
+            list_dictionaries (list): A list of dictionaries.
+        """
+        if list_dictionaries is None or list_dictionaries == []:
+            return "[]"
+        return json.dumps(list_dictionaries)
