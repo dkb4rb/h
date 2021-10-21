@@ -55,17 +55,3 @@ class Rectangle(Base):
             raise TypeError("x must be an integer")
         if value <= 0:
             raise ValueError("x must be > 0")
-
-
-if __name__ == "__main__":
-
-    list = ["", ""]
-
-    rec = Rectangle(20, 30, 40, 50, 2312)
-    rec2 = Rectangle(10, 20, 30, 40, 23)
-
-    list[0] = rec
-    list[1] = rec2
-
-    print(list[0].__dict__)
-    print(list[1].__class__)
