@@ -44,5 +44,21 @@ class TestBase_instantiation(unittest.TestCase):
                                height=1234123412, x=3214123, y=1523)
 
 
+class test_is_types(unittest.TestCase):
+    """This is new reference to type class"""
+
+    def test_is_float(self):
+        if isinstance(self, float):
+            raise TypeError
+
+    def test_is_instance(self):
+        if isinstance(self, str):
+            raise TypeError
+
+    def test_is_int(self):
+        if isinstance(self, int):
+            raise TypeError
+
+
 if __name__ == "__main__":
     unittest.main()
