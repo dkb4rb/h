@@ -21,6 +21,7 @@ class Rectangle(Base):
 
     @property
     def width(self):
+        """ Setter the property of width size """
         return self.__width
 
     @width.setter
@@ -33,6 +34,7 @@ class Rectangle(Base):
 
     @property
     def height(self):
+        """ Setter the property of height size """
         return self.__height
 
     @height.setter
@@ -45,6 +47,7 @@ class Rectangle(Base):
 
     @property
     def x(self):
+        """ Setter the property of x size """
         return self.__x
 
     @x.setter
@@ -57,6 +60,7 @@ class Rectangle(Base):
 
     @property
     def y(self):
+        """ Setter the property of y size """
         return self.__y
 
     @y.setter
@@ -65,3 +69,7 @@ class Rectangle(Base):
             raise TypeError("y must be an integer")
         if value < 0:
             raise ValueError("y must be > 0")
+
+    def area(self):
+        """Return the area of the Rectangle."""
+        return self.width * self.height
