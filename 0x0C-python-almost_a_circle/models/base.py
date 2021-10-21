@@ -22,3 +22,8 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
+    def __str__(self) -> str:
+        print("[Rectangle]({}) {}/{} - {}/{}").format(self.id,
+                                                      self.x, self.y,
+                                                      self.width, self.height)
