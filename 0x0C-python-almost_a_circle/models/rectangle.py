@@ -1,10 +1,7 @@
 #!/usr/bin/python3
 # rectangle.py
 # Juan Duque <3428@holbertonschool.com>
-"""Import the libraries"""
-import json
-import csv
-import turtle
+"""Define the base model"""
 from models.base import Base
 
 """ Define new class rectangle inherits of the class
@@ -44,6 +41,7 @@ class Rectangle(Base):
             raise TypeError("height must be an integer")
         if value <= 0:
             raise ValueError("height must be > 0")
+        self.__height = value
 
     @property
     def x(self):
@@ -53,5 +51,17 @@ class Rectangle(Base):
     def x(self, value):
         if type(value) != int:
             raise TypeError("x must be an integer")
-        if value <= 0:
+        if value < 0:
             raise ValueError("x must be > 0")
+        self.__x = value
+
+    @property
+    def y(self):
+        return self.__y
+
+    @y.setter
+    def y(self, value):
+        if type(value) != int:
+            raise TypeError("y must be an integer")
+        if value < 0:
+            raise ValueError("y must be > 0")
