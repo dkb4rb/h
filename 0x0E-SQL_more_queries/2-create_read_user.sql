@@ -1,5 +1,4 @@
--- Create new Database hbtn_0d_2
--- Creat new user Call user_0d_2
+-- Create new Database hbtn_0d_2 and create New User
 CREATE DATABASE
 	IF NOT EXISTS hbtn_0d_2;
 CREATE USER
