@@ -1,0 +1,2 @@
+#!/usr/bin/node
+console.log(const is_Var = 'JavaScript is amazing');
