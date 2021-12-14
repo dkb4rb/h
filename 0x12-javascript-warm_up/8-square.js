@@ -2,7 +2,7 @@
 const { argv } = require('process');
 
 if (isNaN(parseInt(argv[2]))) {
-  console.log('Missing number of occurrences');
+  console.log('Missing size');
 } else {
   const count = parseInt(argv[2]);
   let c2 = count;
