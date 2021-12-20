@@ -1,28 +1,39 @@
 #!/usr/bin/python3
+"""
+Create new function to conect MySQLdb
+"""
 
 import sys
 import MySQLdb
-if __name__ == "__main__":
+
+
+def new_process():
     """ Values for the connect to the database """
-    users = sys.argv[1]
-    passw = sys.argv[2]
-    datB = sys.argv[3]
+    usr = sys.argv[1]
+    pwd = sys.argv[2]
+    db = sys.argv[3]
+
+    """Stattics values to nc connection"""
+    ht = "localhost"
+    pt = 3306
+
     """Connecting to the database"""
-    db = MySQLdb.connect(host="localhost", user=users,
-                         password=passw, db=datB, port=3306, charset="utf8")
+    d_b = MySQLdb.connect(host=ht, user=usr, password=pwd, db=db, port=pt)
 
     """The cursor gives us the ability to have multiple seperate
     working environments through the same connection to the database"""
-    cur = db.cursor()
+    cur = d_b.cursor()
 
     """Executing the query"""
-    cur.execute("SELECT * FROM states ORDER BY states.id ASC;")
-
-    states = cur.fetchall()
+    cur.execute("SELECT * FROM states ORDER BY states.id ASC")
 
     """ Show the results find """
-    for state in states:
-        print(state)
+    [print(state) for state in cur.fetchall()]
+
     cur.close()
+
     """Closing the connection to the database"""
-    db.close()
+    d_b.close()
+
+
+new_process()
