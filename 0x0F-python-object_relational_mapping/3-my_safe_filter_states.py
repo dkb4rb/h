@@ -1,7 +1,4 @@
 #!/usr/bin/python3
-import sys
-import MySQLdb
-
 import MySQLdb
 from sys import argv
 
