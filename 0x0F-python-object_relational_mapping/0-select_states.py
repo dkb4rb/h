@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Create new function to conect MySQLdb
+Create ne function to conect MySQLdb
 """
 
 import sys
